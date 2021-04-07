@@ -1,0 +1,219 @@
+@paddingLeft : 10px;
+@paddingTop : 10px;
+.AddActivityView,.UpdateActivityView {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: @paddingTop;
+    padding-left: @paddingLeft;
+    .sp {
+        width: calc(100% + @paddingLeft);
+        height: 8px;
+        background-color: rgb(245,245,245,1);
+        position: relative;
+        left: -@paddingLeft;
+        margin-bottom: @paddingTop;
+    }
+    .ver-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        .hor-item {
+            display: flex;
+            align-items: center;
+            flex: 1 1;
+            .p {
+                flex: 0 0 auto;
+                margin-right: 15px;
+            }
+            margin-right: 20px;
+            position: relative;
+        }
+        .noCenter {
+            align-items: initial;
+        }
+        .fixVer {
+            height: 100%;
+        }
+        .should-know-box {
+            display: flex;
+            flex: 1 1;
+            .item {
+                padding-top: 20px;
+                margin-right: 40px;
+                .title {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        &.col-item {
+            flex-direction: column;
+            align-items: initial;
+        }
+        .ticket-box {
+            padding-top: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+            left: 0;
+            .button-box {
+                display: flex;
+                box-sizing: border-box;
+                padding-left: 30px;
+                .add-ticket-button {
+                    width:94px;
+                    height:38px;
+                    border:1px solid rgba(255,137,0,1);
+                    border-radius:4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: rgba(255,137,0,1);
+                    background-color: transparent;
+                    margin-right: 20px;
+                }
+            }
+            .table-box {
+                width: 100%;
+            }
+        }
+    }
+
+    .tag-box {
+        margin-left: 10px;
+        display: flex;
+    }
+    .base-info-box {
+        padding-top: 50px;
+        flex: 1 1;
+        box-sizing: border-box;
+        .force-item-box, .no-force-item-box{
+            display: flex;
+            margin-bottom: 20px;
+            .img-switch-box {
+                display: flex;
+                align-items: center;
+                align-content: center;
+                &.noCenter {
+                    align-items: start;
+                }
+
+                .ruaQAQ {
+                    width:22px;
+                    height:22px;
+                    border:1px solid rgba(102,102,102,1);
+                    border-radius:4px;
+                }
+                .img-switch {
+                    width: 22px;
+                }
+                .text {
+                    margin-left: 10px;
+                }
+            }
+        }
+        .force-required-box {
+            display: flex;
+            align-items: center;
+            .text {
+                flex: 0 0 auto;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+        .no-force-item-box {
+            display: flex;
+
+            .no-force-item-content {
+                display: flex;
+                flex-direction: column;
+                margin-left: 15px;
+                > .el-input {
+                    margin-bottom: 10px;
+                }
+            }
+            .select-item-box {
+                display: flex;
+                align-items: center;
+                align-content: center;
+                flex-wrap: wrap;
+                > .el-tag {
+                    background-color: initial;
+                    color: initial;
+                    .el-tag__close {
+                        color: initial;
+                    }
+                }
+                .select-item {
+                    display: inline-block;
+                    border:1px solid rgba(153,153,153,1);
+                    border-radius:6px;
+                    padding: 5px 8px;
+                    margin-right: 10px;
+                }
+                .add-img {
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+        }
+
+    }
+    .submit {
+        width:115px;
+        height:44px;
+        background:rgba(255,112,0,1);
+        border-radius:10px;
+        font-size:22px;
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 100px;
+    }
+
+    .add-form-item-box {
+        min-width: 350px;
+        flex: 0 0;
+        margin-right: 110px;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        padding-top: 50px;
+        flex-direction: column;
+
+        .p {
+            align-self: start;
+            position: relative;
+            left: -20px;
+            margin-bottom: 20px;
+        }
+
+        .rua {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+        }
+        .item {
+            width:141px;
+            height:47px;
+            background:rgba(245,172,86,1);
+            border-radius:4px;
+            font-size:20px;
+            font-weight:400;
+            color:rgba(255,255,255,1);
+            line-height: 47px;
+            text-align: center;
+        }
+        .wrap {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+    }
+}

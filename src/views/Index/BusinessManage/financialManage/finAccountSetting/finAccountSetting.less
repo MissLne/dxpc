@@ -1,0 +1,96 @@
+.finAccountSettingView {
+    width: 100%;
+    background-color: #ffffff;
+    height: 100%;
+    .table-box {
+        padding: 0 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .button-box {
+        display: flex;
+        justify-content: center;
+        margin-top: 65px;
+        .add-btn {
+            width:130px;
+            height:36px;
+            background:rgba(255,255,255,1);
+            border:1px solid rgba(153,153,153,1);
+            border-radius:6px;
+            font-size:16px;
+            font-weight:400;
+            color:rgba(51,51,51,1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 50px;
+        margin-top: 10px;
+        position: relative;
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            .p {
+                width: 101px;
+                text-align: right;
+                margin-right: 10px;
+            }
+            .input {
+                height:34px;
+                border:1px solid rgba(153,153,153,1);
+                border-radius:6px;
+                box-sizing: border-box;
+                padding: 0 15px;
+            }
+        }
+    }
+    .rua {
+        position: absolute;
+        top: 37px;
+        right: 23px;
+        font-size:14px;
+        font-weight:400;
+        color:rgba(51,51,51,1);
+    }
+    .line {
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        width:581px;
+        height:2px;
+        background:rgba(221,221,221,1);
+    }
+    .footer {
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        .cancel-button, .confirm-button{
+            margin: 0 15px;
+            width:62px;
+            height:29px;
+            border-radius:4px;
+            font-size:15px;
+            font-weight:400;
+            color:rgba(255,255,255,1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cancel-button {
+            background:rgba(153,153,153,1);
+        }
+        .confirm-button {
+            background:rgba(255,112,0,1);
+        }
+    }
+
+}

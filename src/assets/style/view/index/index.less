@@ -1,0 +1,74 @@
+.IndexPage.wrapper {
+    height: 100%;
+    .header {
+        display: flex;
+        height: 110px;
+        background:rgba(255,255,255,1);
+        .left {
+            width: 230px;
+            height: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .logo {
+                font-size:43px;
+                font-family: Segoe UI Historic, serif;
+                font-weight:400;
+                color:rgba(255,137,0,1);
+                cursor: pointer;
+            }
+            position: relative;
+            &::after {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                width:171px;
+                height:1px;
+                background:rgba(221,221,221,1);
+                border-radius:1px;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 0;
+            }
+        }
+        .right {
+            height: 100%;
+            display: flex;
+            flex: 1 1 auto;
+            justify-content: space-between;
+            align-items: center;
+            .title {
+                font-size:32px;
+                font-family: Microsoft YaHei, serif;
+                font-weight:400;
+                color:rgba(51,51,51,1);
+                margin-left: 26px;
+            }
+            .login-out-box {
+                display: flex;
+                .logo {
+                    display: inline-block;
+                    width: 19px;
+                    height: 19px;
+                    background-size: cover;
+                    background-image: url("../../../../assets/img/index/logo-login-out.png");
+                }
+                .login-out {
+                    font-size:16px;
+                    font-family: Microsoft YaHei, serif;
+                    font-weight:400;
+                    color:rgba(51,51,51,1);
+                    margin-left: 10px;
+                    margin-right: 42px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+
+    }
+    .body {
+        height: calc(100% - 110px);
+    }
+}

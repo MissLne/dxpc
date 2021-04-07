@@ -1,0 +1,103 @@
+.consultateEvaluationView.wrapper {
+
+    background:rgba(255,255,255,1);
+    height: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+    padding-top: 22px;
+    .header {
+        margin-left: 20px;
+        .select-box {
+            display: flex;
+            width : 200px;
+
+            justify-content: space-between;
+            .select-item {
+                font-size:18px;
+                font-family:Microsoft YaHei;
+                font-weight:400;
+                color:rgba(102,102,102,1);
+                cursor: pointer;
+            }
+            .select-item.active {
+                font-size:20px;
+                font-family: Microsoft YaHei, serif;
+                font-weight:400;
+                color:rgba(255,137,0,1);
+                position: relative;
+            }
+            .select-item::after {
+                width: 50%;
+                height:2px;
+                background:rgba(255,137,0,1);
+                border-radius:1px;
+                content: '';
+                display: inline-block;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -9px;
+            }
+        }
+        .search-box {
+            display: flex;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            .input {
+                width:271px;
+                height:34px;
+                background:rgba(245,245,245,1);
+                border:1px solid rgba(153,153,153,1);
+                border-radius:4px;
+                box-sizing: border-box;
+                padding-left: 10px;
+                line-height: 34px;
+                margin-right: 20px;
+            }
+
+            .search-btn {
+                width:67px;
+                height:34px;
+                background:rgba(255,137,0,1);
+                border-radius:4px;
+                font-size:18px;
+                font-weight:400;
+                color:rgba(255,255,255,1);
+            }
+        }
+    }
+
+
+    .cancel-button, .confirm-button {
+        width:62px;
+        height:29px;
+        border-radius:4px;
+        font-size:15px;
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cancel-button {
+        background:rgba(153,153,153,1);
+        margin-right: 60px;
+    }
+
+    .confirm-button {
+        background:rgba(255,112,0,1);
+    }
+
+    .button-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+
+
+
+
+
+}

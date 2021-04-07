@@ -1,0 +1,69 @@
+@import "../../../assets/style/public/mixin.less";
+.ActivityItemView {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    .preview {
+        width:234px;
+        height:145px;
+        margin-right: 25px;
+    }
+    .right-box {
+        font-size:18px;
+        color:rgba(51,51,51,1);
+        .title {
+            font-weight:bold;
+            margin-bottom: 16px;
+        }
+        .time {
+            font-weight:400;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 23px;
+            &:before {
+                @positionCenter();
+                background-image: url("./icon-clock.png");
+                background-size: cover;
+                display: inline-block;
+                height: 17.8px;
+                width: 17.8px;
+                content: '';
+                left: 0px;
+            }
+        }
+        .address {
+            font-weight:400;
+            position: relative;
+            padding-left: 23px;
+            &:before {
+                @positionCenter();
+                background-image: url("./icon-address.png");
+                background-size: cover;
+                display: inline-block;
+                height: 17.8px;
+                width: 17.8px;
+                content: '';
+                left: 0px;
+            }
+
+        }
+    }
+    .btn {
+        width: 85px;
+        height: 40px;
+        background: rgba(245, 147, 32, 1);
+        border-radius: 6px;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 67px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

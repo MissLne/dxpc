@@ -1,0 +1,165 @@
+@import "../../../../../assets/style/public/mixin.less";
+.UserDetailView {
+    height: 100%;
+    display: flex;
+    >.left {
+        width: 386px;
+        flex: 0 0 auto;
+        height: 100%;
+        border-right: 20px solid #F9F9F9;
+
+        .header-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .username {
+                font-size:18px;
+                font-weight:400;
+                color:rgba(51,51,51,1);
+                margin-bottom: 12px;
+            }
+            .introduce {
+                font-size:16px;
+                font-weight:400;
+                color:rgba(102,102,102,1);
+            }
+            .avatar {
+                border-radius: 50%;
+                width:110px;
+                height:110px;
+                margin-bottom: 15px;
+            }
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            .box {
+                display: flex;
+                flex-direction: column;
+                .item {
+                    display: flex;
+                    .name {
+                        width: 130px;
+                        font-size:16px;
+                        font-weight:400;
+                        color: #333333;
+                    }
+                    .value {
+                        font-size:16px;
+                        font-weight:400;
+                        color: #666666;
+                    }
+                    &:nth-of-type(2) {
+                        margin-bottom: 20px;
+                    }
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+    }
+    > .right {
+        padding-left: 20px;
+        padding-top: 20px;
+        .header {
+            margin-bottom: 20px;
+            .title {
+                padding-left: 12px;
+                position: relative;
+                &:before {
+                    position: absolute;
+                    content: '';
+                    width:4px;
+                    height:16px;
+                    background:rgba(255,137,0,1);
+                    border-radius:2px;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+    }
+
+    > .container {
+        background-color: #ffffff;
+
+        > [class *= "box"] {
+            padding-left: 60px;
+        }
+
+        .bus-message-box {
+            display: flex;
+            margin-bottom: 40px;
+            .left {
+                .avatar {
+                    width: 127px;
+                    height: 127px;
+                }
+            }
+            .right {
+                display: flex;
+               .item {
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   color: #333333;
+                   font-size:18px;
+                   font-weight:400;
+                   &:first-of-type {
+                       margin-left: 54px;
+                   }
+                   margin-right: 120px;
+                   > p.p:first-of-type {
+                       margin-bottom: 30px;
+                   }
+               }
+            }
+        }
+
+        .bus-introduce-box {
+            .detail {
+                font-size:16px;
+                font-weight:400;
+                color:rgba(51,51,51,1);
+                margin-bottom: 40px;
+            }
+        }
+
+        .activity-box {
+            background-color: #ffffff;
+        }
+
+        .title {
+            padding-left: 12px;
+            position: relative;
+            color: #333333;
+            font-size:18px;
+            &:before {
+                position: absolute;
+                content: '';
+                width:4px;
+                height:16px;
+                background:rgba(255,137,0,1);
+                border-radius:2px;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            margin-bottom: 20px;
+        }
+
+
+
+
+
+    }
+
+
+
+
+
+}
